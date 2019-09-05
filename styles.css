@@ -32,8 +32,6 @@
     border-color: #777777;
     background-color: #777777;
     margin-top: 20px;
-    padding: 5px;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
@@ -65,23 +63,9 @@
   .home-text {
     margin-top: 10%;
     padding: 52px;
-    display: flex;
     justify-content: center;
   }
-  
-  .flex-text {
-    flex: 2 5 700px;
-  }
-  
-  .flex-image {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .flex-container {
-    display: flex;
-  }
-  
+
   .light-sect {
     padding: 30px 7%;
     line-height: 28px;
@@ -140,14 +124,11 @@
   
   .table-text {
     padding: 0px 15px;
+    min-width: 125px;
   }
   
   .check {
-    min-width: 12px;
-  }
-  
-  td {
-    min-width: 20px;
+    width: 50px;
   }
   
   .buttons {
@@ -224,6 +205,7 @@
   }
 
   #portfolio-pic {
+    float: right;
     border-radius: 50%;
     max-width: 200px;
     margin: 0px 10px;
@@ -291,20 +273,21 @@
   
   @media only screen and (max-width: 700px) {
   
-    .flex-container {
-      display: default;
+    .home-text {
+      padding: 0px;
     }
-  
-    .flex-text {
-      flex: auto;
-    }
-  
-    .flex-image {
-      margin: 0;
-    }
-
+    
     .project-images {
       max-width: 90%;
+    }
+  
+    .table-text {
+      padding: 0px 10px;
+      min-width: 100px;
+    }
+    
+    .check {
+      width: 20px;
     }
     
     #nav-bar ul li a {
@@ -316,7 +299,6 @@
     
     #portfolio-pic {
       max-width: 150px;
-      float: right;
     }
     
     #top-sect {
