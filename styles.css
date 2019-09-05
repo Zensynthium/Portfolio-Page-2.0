@@ -1,0 +1,346 @@
+  html, body {
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+  
+  main {
+    animation: fadein 2s;
+  }
+  
+  h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  figcaption {
+    font-style: italic;
+    text-align: center;
+  }
+  
+  table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777777;
+    background-color: #777777;
+    margin-top: 20px;
+    padding: 5px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777777;
+    background-color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  footer {
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* #1542bf, #b789f4 are the button colors, light blue - purple*/
+
+  .spacer {
+    display: block;
+    height: 10px;
+    margin-top: -10px;
+    visibility: hidden;
+  }
+
+  .home-text {
+    margin-top: 10%;
+    padding: 52px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-text {
+    flex: 2 5 700px;
+  }
+  
+  .flex-image {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .light-sect {
+    padding: 30px 7%;
+    line-height: 28px;
+    color: #777777;
+    animation: moveleft 1.25s;
+    overflow: auto;
+  }
+  
+  .light-sect h1, .light-sect h2 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  .light-sect h3 {
+    color: #333333;
+  }
+  
+  .light-sect p, .dark-sect p {
+    text-align: center;
+  }
+  
+  .dark-sect {
+    padding: 30px 7%;
+    line-height: 28px;
+    background-color: #282828;
+    color: #777777;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    animation: moveright 1.25s;
+  }
+  
+  .dark-sect h1, .dark-sect h2 {
+    text-align: center;
+  }
+  
+  .dark-sect h1 {
+    color: #ffffff;
+  }
+  
+  .dark-sect h2 {
+    color: #DDDDDD;
+  }
+  
+  .project-images {
+    display: block;
+    max-width: 50%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
+  }
+  
+  .project-images:hover {
+    max-width: 90%;
+  }
+  
+  .table-text {
+    padding: 0px 15px;
+  }
+  
+  .check {
+    min-width: 12px;
+  }
+  
+  td {
+    min-width: 20px;
+  }
+  
+  .buttons {
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: #777777;
+    background: #fff;
+    transition: all 0.5s;
+  }
+  
+  .buttons:hover {
+    border-color: #b789f4;
+    background: linear-gradient(-45deg, #1542bf, #b789f4);
+    color: #ffffff;
+  }
+
+  #home-body {
+    background-image: url("images/background-image-min.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    width: calc(100% - 50px);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-shadow: 3px 2px 3px black;
+    padding: 5px 25px;
+  }
+  
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
+    animation: fadein 3s;
+    z-index: 1;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(30, 30, 30, 0.9);
+    overflow: hidden;
+  }
+  
+  #nav-bar ul li a {
+    float: left;
+    color: #ffffff;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-shadow: 3px 2px 3px black;
+    text-decoration: none;
+  }
+  
+  #nav-bar ul li a:hover {
+    background-color: rgba(10, 10, 10, 0.9);
+    transition: all 0.6s ease-out;
+  }
+
+  #drop-down {
+    display: none;
+  }
+
+  #portfolio-pic {
+    border-radius: 50%;
+    max-width: 200px;
+    margin: 0px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
+    transition: all 1s;
+  }
+  
+  #top-sect-about {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+  #guitar-image {
+    float: left;
+    max-width: 250px;
+    margin: 0 15px 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.46);
+  }
+  
+  #guitar-text {
+    text-align: left;
+  }
+  
+  #resume:hover {
+    transition: 1s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.46);
+  }
+  
+  #button-container {
+    text-align: center;
+  }
+  
+  #social-media-buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 145px;
+    padding: 5px;
+  }
+  
+  #contact-sect {
+    padding: 30px 7%;
+    line-height: 28px;
+    background-image: linear-gradient(45deg, #6c46b8, #7b7ed4);
+    color: white;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    animation: moveright 1.25s;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  @keyframes moveright {
+    from { transform: translateX(20px);}
+    to   { transform: translateX(0);}
+  }
+  
+  @keyframes moveleft {
+    from { transform: translateX(-20px);}
+    to   { transform: translateX(0);}
+  }
+  
+  @media only screen and (max-width: 700px) {
+  
+    .flex-container {
+      display: default;
+    }
+  
+    .flex-text {
+      flex: auto;
+    }
+  
+    .flex-image {
+      margin: 0;
+    }
+
+    .project-images {
+      max-width: 90%;
+    }
+    
+    #nav-bar ul li a {
+      float: left;
+      color: #ffffff;
+      padding: 8px 10px;
+      font-size: 15px;
+    }
+    
+    #portfolio-pic {
+      max-width: 150px;
+      float: right;
+    }
+    
+    #top-sect {
+      margin-top: 6%;
+    }
+    
+    #top-sect-about {
+      margin-top: 6%;
+      width: 85%;
+    }
+    
+    #guitar-image {
+      width: 50%;
+      clear: both;
+      margin-bottom: 0;
+    }
+    
+    #resume {
+      width: 90%;
+    }
+
+    #survey-form {
+     width: 98%;
+     line-height: 20px;
+    }
+  }
+  
