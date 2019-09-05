@@ -299,11 +299,16 @@
     
     #home-body {
       padding: 15px;
-      width: calc(100% - 20px);
+      width: calc(100% - 30px);
+    }
+    
+    #home-body h1 {
+      font-size: 36px;
     }
     
     #portfolio-pic {
-      max-width: 150px;
+      width: 30%;
+      min-width: 150px;
       margin: 0;
     }
     
