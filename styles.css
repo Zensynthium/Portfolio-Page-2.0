@@ -250,7 +250,11 @@
   #contact-sect {
     padding: 30px 7%;
     line-height: 28px;
-    background-image: linear-gradient(45deg, #6c46b8, #7b7ed4);
+    background: rgb(108,70,184);
+    background: -moz-linear-gradient(45deg, rgba(108,70,184,1) 0%, rgba(123,126,212,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(108,70,184,1) 0%, rgba(123,126,212,1) 100%);
+    background: linear-gradient(45deg, rgba(108,70,184,1) 0%, rgba(123,126,212,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c46b8",endColorstr="#7b7ed4",GradientType=1);
     color: white;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     animation: moveright 1.25s;
