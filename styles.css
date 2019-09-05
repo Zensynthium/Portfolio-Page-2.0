@@ -297,8 +297,14 @@
       font-size: 15px;
     }
     
+    #home-body {
+      padding: 10px;
+      width: calc(100% - 20px);
+    }
+    
     #portfolio-pic {
       max-width: 150px;
+      margin: 0;
     }
     
     #top-sect {
